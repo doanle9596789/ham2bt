@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<label><input type="number" id="ip1" placeholder=" nhập meter" onchange="bt1()"></label>
+<label ><input type="number" id="ip2" placeholder="nhập feet" onchange="bt2()"></label>
+<br>
+<p onchange="p"> kết quả</p>
+
+<script>
+    function doiMet(foot) {
+        let meter = 0.305 * foot;
+        return meter;
+    }
+
+    function doiFoot(meter) {
+        let foot = meter *3.279;
+        return foot;
+    }
+function bt1(){
+    let foot = parseInt(document.getElementById("ip1").value);
+    document.write(foot + " foot " + "= " + doiMet(foot) + " meter")
+    }
+    function bt2(){
+    let meter = parseInt(document.getElementById("ip2").value);
+    document.write(meter + " meter " + "= " + doiFoot(meter) + " foot");
+    }
+</script>
+
+</body>
+</html>
