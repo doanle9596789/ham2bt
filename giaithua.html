@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function giaithua(number) {
+        if (number <= 1) {
+            return 1;
+        }
+        return number*giaithua(number-1);
+
+    }let number=parseInt(prompt("nhập số cần tính giai thừa"))
+   document.writeln("giai thừa của" + number+ " " +"là" +  giaithua(number));
+</script>
+
+</body>
+</html>
